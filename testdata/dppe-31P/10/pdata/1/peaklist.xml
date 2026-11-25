@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList>
+  <PeakList1D>
+    <PeakList1DHeader creator="nmrsu" date="2025-09-17T15:10:45.465-04:00" expNo="10" name="Noah and Demari DPPE" owner="" procNo="1" source="C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr">
+      <PeakPickDetails>F1=152.998306ppm, F2=-252.998257ppm, MI=0.00cm, MAXI=10000.00cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="-5.367644" intensity="1.500000e+01" type="0"/>
+    <Peak1D F1="-12.583955" intensity="5.894742e+00" type="0"/>
+    <Peak1D F1="-20.044920" intensity="2.305626e-01" type="0"/>
+  </PeakList1D>
+</PeakList>

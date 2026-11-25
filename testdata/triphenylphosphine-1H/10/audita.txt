@@ -1,0 +1,26 @@
+##TITLE= Audit trail, TopSpin 4.4.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= root
+$$ /root/.topspin-BladeEpu/local_acqu/2024 triphenylphosphine reference/10/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-09-18T20:13:36.306+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <acquisition in progress>)
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/2024 triphenylphosphine reference/10/audita.txt
+(   2,<2024-09-18T20:15:09.503+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <created by zg on 'Avance' (CZC32574FZ) by user 'CZC32574FZ\nmrsu'
+       on data set with UUID '7c68058c-75fa-11ef-9fda-0030d6368905'
+       started at 2024-09-18 20:13:36.306 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2024-09-18 20:15:09.502 +0000
+       configuration hash MD5:
+       5E 30 06 7C FA 89 B2 6C 4E BE 0D 84 F6 77 69 BB
+       double data hash MD5: 64K
+       AC 8D 4B 1D 55 49 36 F4 A5 94 91 B1 D1 38 43 E8>)
+(   3,<2024-09-18T16:15:09.572-0400>,<nmrsu>,<CZC32574FZ>,<xwish3>,<TopSpin 4.4.0>,
+      <ICON-NMR User ID: CHEM 3200H
+       double data hash MD5: 64K
+       AC 8D 4B 1D 55 49 36 F4 A5 94 91 B1 D1 38 43 E8>)
+##END=
+
+$$ hash MD5
+$$ 1A 79 14 1C 7B 15 42 6A 9B 8C 87 E5 1F C7 32 26

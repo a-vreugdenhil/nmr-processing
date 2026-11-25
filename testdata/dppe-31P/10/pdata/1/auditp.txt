@@ -1,0 +1,48 @@
+##TITLE= Audit trail, TopSpin 4.4.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= nmrsu
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/Noah and Demari DPPE/10/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-09-17T19:09:23.626+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <acquisition in progress>)
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/Noah and Demari DPPE/10/audita.txt
+(   2,<2025-09-17T19:10:57.404+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <created by zg on 'Avance' (CZC32574FZ) by user 'CZC32574FZ\nmrsu'
+       on data set with UUID 'd2639b54-93f9-11f0-b648-0030d6368905'
+       started at 2025-09-17 19:09:23.626 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2025-09-17 19:10:57.403 +0000
+       configuration hash MD5:
+       5E 30 06 7C FA 89 B2 6C 4E BE 0D 84 F6 77 69 BB
+       double data hash MD5: 64K
+       D1 37 22 80 04 23 66 2E EA 0D 6A 48 CD 9C DC 67>)
+(   3,<2025-09-17T15:10:44.230-0400>,<nmrsu>,<CZC32574FZ>,<xwish3>,<TopSpin 4.4.0>,
+      <ICON-NMR User ID: CHEM 3200H
+       double data hash MD5: 64K
+       D1 37 22 80 04 23 66 2E EA 0D 6A 48 CD 9C DC 67>)
+(   4,<2025-09-17T15:10:45.215-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <Start of raw data processing
+       ef LB = 1 FT_mod = 6 PKNL = 1 SI = 32K 
+       data hash MD5: 32K
+       85 AE 11 E2 45 3E 1F 1D B3 78 78 42 F9 CB 62 CC>)
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/Noah and Demari DPPE/10/pdata/1/auditp.txt
+(   5,<2025-09-17T15:10:45.308-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <apk 
+       data hash MD5: 32K
+       6C DC BB 1B A5 02 F0 B9 69 B7 DF C5 93 9A A6 60>)
+(   6,<2025-09-17T15:10:45.418-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <abs ABSG = 5 
+       data hash MD5: 32K
+       0D A7 46 24 77 B1 EF D1 20 FC CD 3A 0E C2 C7 FA>)
+(   7,<2025-09-17T15:10:45.449-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<peak>,<TopSpin 4.4.0>,
+      <1D Peak picking
+       data hash MD5: 32K
+       0D A7 46 24 77 B1 EF D1 20 FC CD 3A 0E C2 C7 FA>)
+(   8,<2025-09-17T15:10:45.543-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<xwish3>,<TopSpin 4.4.0>,
+      <ICON-NMR User ID: CHEM 3200H
+       data hash MD5: 32K
+       0D A7 46 24 77 B1 EF D1 20 FC CD 3A 0E C2 C7 FA>)
+##END=
+
+$$ hash MD5
+$$ A9 96 F5 C5 C6 14 C0 C4 6C 0B 68 77 BF 4A 81 2B

@@ -1,0 +1,145 @@
+CONFIGURATION INFORMATION
+=========================
+
+Path         : /opt/topspin/conf/instr/spect/uxnmr.info
+Date         : Thu Aug  8 18:32:18 2024
+Release      : TopSpin 4.4.0
+Installed in : /opt/topspin
+Host         : BladeEpu
+OS           : CentOS Linux release 7.2.1511 (Core) 
+SPECTR-OS    : Version 4.4.180.20240301
+CPU          : Intel(R) Core(TM) i5-8400H CPU @ 2.50GHz (8 cores at 3900 MHz with Hyperthreading)
+User         : root (root)
+System       : Avance Neo 400 NMR spectrometer
+1H-frequency : 400.3 MHz
+Description  : Avance
+Bruker Order : Z165468_00856
+Configured in: BladeEpu:/opt/topspin/conf/instr/spect
+
+AQ-Rack:
+- SCU: AV4I SCU SYSTEM CONTROL UNIT Z162978/02219 ECL 02.01
+- {EPU}: AV4I SCU SYSTEM CONTROL UNIT Z162978/02219 ECL 02.01
+- {GTU}: AV4I SCU SYSTEM CONTROL UNIT Z162978/02219 ECL 02.01
+  Location: slot 7 in rack 1
+  Connection: at IP 192.168.180.18 via PCIe #4
+  Firmware Version: 20210312125813
+  - Gradient resolution: 1.0 us
+  Devices: MTD at /dev/mtd2, RTD at /dev/bbu/rtd4.4, GPROC at /dev/bbu/gproc4.7
+  Sequencer: GCube, TCube
+  - GCube1
+  - TCube1
+- TRX 1200: AV4 TRANSCEIVER 1200 Z148391/10936 ECL 03.02
+  Location: slot 4 in rack 1
+  Connection: at IP 192.168.180.38 via PCIe #9
+  Firmware Version: 20210312121750
+  Devices: MTD at /dev/mtd11, DRX at /dev/bbu/drx9.5, RTD at /dev/bbu/rtd9.4
+  Sequencer: FCube
+  - FCube1
+- TRX 1200: AV4 TRANSCEIVER 1200 Z148391/10937 ECL 03.02
+  Location: slot 5 in rack 1
+  Connection: at IP 192.168.180.46 via PCIe #11
+  Firmware Version: 20210312121750
+  Devices: MTD at /dev/mtd20, DRX at /dev/bbu/drx11.5, RTD at /dev/bbu/rtd11.4
+  Sequencer: FCube
+  - FCube2
+- PSM-A: AV4 PSM-A Z149510/04236 ECL 03.02
+- RACK: AV4 CONSOLE NB WIRED Z163448/01190 ECL 02.00
+- PSM-D: AV4 PSM-D Z149520/04210 ECL 01.02
+- PSM-48V: AV4 PSM-48V Z149850/07253 ECL 02.00
+- BLA2BB: BLA2BB 150/60 20-400 W1345049/7251 ECL 92
+- PSM-BLA: AQS INES PSM-BLA POWER SUPPLY Z128045/02413 ECL 02.01
+- REF 1200: AV4 REFERENCE 1200 Z148270/03935 ECL 03.00
+- XBB19F 2HS: AQS XBB19F 2HS PREAMP CRP 400 Z128143/01973 ECL 07.02
+  HPPR2: - HPPR/2 preamplifier connected via AqRack
+      Type      : HPPR/2
+      Controller: no Cover
+                  no LED display for tuning and matching
+      Module  1 : XBB19F 2HS
+                  PN=Z128143, SN=01973 from 20240126
+      Module  2 : 1H/2H 1H (virtual 50 Ohm reference: 112.4%/75.0deg)
+                  PN=Z128274, SN=02182 from 20240105
+      Module  3 : 1H/2H 2H (virtual 50 Ohm reference: 102.1%/-66.0deg)
+                  PN=Z128274, SN=02182 from 20240105
+  
+- 1H/2H 1H: AQS 1H/2H PREAMP 400 CRP Z128274/02182 ECL 01.07
+- 1H/2H 2H: AQS 1H/2H PREAMP 400 CRP Z128274/02182 ECL 01.07
+
+Amplifiers (AQS configuration):
+  Amplifier  Module  Nucleus  Power/W  Switchbox Name PN/SN/FW
+      1         1        B      150    N         BLA2BB 150/60 20-400 W1345049/7251/-
+      1         2        B       60    N         BLA2BB 150/60 20-400 W1345049/7251/-
+
+
+Transmitters at the spectrometer subnet:
+----------------------------------------
+LTRX Z109888/04102 ECL 04.02:
+- TCP/IP address = 192.168.99.10
+- Amplifier      = BSMS/2 LOCK TRANSCEIVER 400: Z109888/04102 ECL 04.02
+
+BSMS: BSMS/2 functionality available
+- TCP/IP address = 192.168.99.10
+- ELCB firmware version = 20230420
+- Note:  The ELCB firmware is too old.
+- ELCB = BSMS/2 ELCB: Z100818/10691 ECL 07.03
+- Backplane = AV4 CONSOLE NB WIRED: Z163448/01190 ECL 02.00
+- Power Supply = INES/3 PSM-B POWER SUPPLY: Z128071/02327 ECL 01.03
+- Variable Power Supply 1 = AV4 VARIABLE POWER SUPPLY BD DC: Z139305/03445 ECL 01.02
+- SLCB functionality: Available
+- GAB Z-Gradient = AV4 GAB/2 GRADIENT AMPL BD: Z155150/03396 ECL 00.01
+- GAB current limits = 0.0/X, 0.0/Y, 10.0/Z (in A)
+- Shim System = BOSS3-SB
+- SCB channels = 40
+- SCB1 = BSMS/2 SCB20: Z102930/16677 ECL 05.01
+- SCB2 = BSMS/2 SCB20: Z102930/16675 ECL 05.01
+- Shim matrix file: 292722aa.dat
+- Active shims: Z Z2 Z3 Z4 Z5 X XZ XZ2 (X2-Y2) XY Y YZ YZ2 (X2-Y2)Z2 XZ4 XZ3 Z6 (X2-Y2)Z YZ4 YZ3 XYZ2 XYZ X3Z X3 Y3Z Y3 Z7 Z8 XZ5 YZ5 (X2-Y2)Z3 (X2-Y2)Z4 (X2-Y2)Z5 XYZ3 XYZ4 XYZ5
+- Magnet polarity: SN (Bruker), uses standard H0 polarity
+- L-TRX = BSMS/2 LOCK TRANSCEIVER 400: Z109888/04102 ECL 04.02
+- Lock: On L-TRX board, supports 2H
+- VTU_SPB = BSMS/2 SPB SENSOR & PNEUMATIC BD: Z115191/07756 ECL 05.05
+- VTU_VPSB1 = AV4 VARIABLE POWER SUPPLY BD DC: Z139305/03445 ECL 01.02
+- SampleMail = SM/3 CONTROLLER: Z177210/001407 ECL 01.01
+
+SampleCase: in BSMS/2 connected to ethernet
+- TCP/IP address = 192.168.99.10
+-  = SM/3 CONTROLLER: Z177210/001407 ECL 01.01
+- VTC active channel 1 = PIM PROBE MAIN CONTROL UNIT: Z144035/02742 ECL 01.06
+- VTC accessory channel 1 = BCU I: Z154651/00628 ECL 02.00
+- VTC accessory channel 2 = N2-LEVELSONDE 12/926/660 D315: Z122394/00000 ECL 00.00
+
+VTU: in BSMS/2 connected to ethernet
+- TCP/IP address = 192.168.99.10
+
+Bruker Power Distribution Units at the spectrometer subnet:
+-------------------------------------------------
+Bruker Power Distribution Unit 1: BPDU-BHMI
+- TCP/IP address   = 192.168.99.98
+
+Magnet System:
+- Magnet  : BZH1754070I05
+- Cryostat: D315-54-7271
+- Polarity: SN (Bruker)
+
+
+RF cable connections (detected)
+--------------------------------------------------------------------
+TRX1 NORM output -> input 1 of transmitter 1 (BLA2BB 150/60 20-400 W1345049/7251)
+TRX1 AUX  output -> open
+TRX2 NORM output -> input 2 of transmitter 1 (BLA2BB 150/60 20-400 W1345049/7251)
+TRX2 AUX  output -> input 1 of transmitter 2 (BSMS/2 LOCK TRANSCEIVER 400 Z109888/04102 at TCP/IP 192.168.99.10)
+
+Blanking cable connections (detected)
+--------------------------------------------------------------------
+transmitter 1 = BLA2BB 150/60 20-400 W1345049/7251:
+- amplifier B-150W uses blanking 1
+- amplifier B-60W uses blanking 2
+
+transmitter 2 = BSMS/2 LOCK TRANSCEIVER 400 Z109888/04102 at TCP/IP 192.168.99.10:
+- amplifier 2H-5W uses blanking 9
+
+
+Preamplifier connections (detected)
+--------------------------------------------------------------------
+Tune-TRX1 -> XBB19F 2HS -> REC1
+Tune-TRX2 -> 1H/2H 1H   -> REC2
+Tune-TRX2 -> 1H/2H 2H   -> REC2

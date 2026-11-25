@@ -1,0 +1,54 @@
+##TITLE= Audit trail, TopSpin 4.4.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= nmrsu
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/2024 triphenylphosphine reference/10/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-09-18T20:13:36.306+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <acquisition in progress>)
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/2024 triphenylphosphine reference/10/audita.txt
+(   2,<2024-09-18T20:15:09.503+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <created by zg on 'Avance' (CZC32574FZ) by user 'CZC32574FZ\nmrsu'
+       on data set with UUID '7c68058c-75fa-11ef-9fda-0030d6368905'
+       started at 2024-09-18 20:13:36.306 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2024-09-18 20:15:09.502 +0000
+       configuration hash MD5:
+       5E 30 06 7C FA 89 B2 6C 4E BE 0D 84 F6 77 69 BB
+       double data hash MD5: 64K
+       AC 8D 4B 1D 55 49 36 F4 A5 94 91 B1 D1 38 43 E8>)
+(   3,<2024-09-18T16:15:09.572-0400>,<nmrsu>,<CZC32574FZ>,<xwish3>,<TopSpin 4.4.0>,
+      <ICON-NMR User ID: CHEM 3200H
+       double data hash MD5: 64K
+       AC 8D 4B 1D 55 49 36 F4 A5 94 91 B1 D1 38 43 E8>)
+(   4,<2024-09-18T16:15:10.795-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <Start of raw data processing
+       ef LB = 0.3 FT_mod = 6 PKNL = 1 SI = 64K 
+       data hash MD5: 64K
+       3F 6A 72 51 39 EA 32 66 0C 0B 1F 5B F2 18 BE 12>)
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/2024 triphenylphosphine reference/10/pdata/1/auditp.txt
+(   5,<2024-09-18T16:15:11.579-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <apk0 
+       data hash MD5: 64K
+       C0 5A 58 69 2B 2F 82 B8 D3 09 7A CD F5 51 75 66>)
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/2024 triphenylphosphine reference/10//pdata/1/auditp.txt
+(   6,<2024-09-18T16:15:11.642-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<sref>,<TopSpin 4.4.0>,
+      <sref
+       data hash MD5: 64K
+       C0 5A 58 69 2B 2F 82 B8 D3 09 7A CD F5 51 75 66>)
+$$ C:/Bruker/TopSpin4.4.0/data/CHEM 3200H/nmr/2024 triphenylphosphine reference/10/pdata/1/auditp.txt
+(   7,<2024-09-18T16:15:11.673-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <abs ABSG = 5 
+       data hash MD5: 64K
+       CB 4A FA 7F E8 AE 1D 31 4B BB 38 A1 B7 88 FF 0F>)
+(   8,<2024-09-18T16:15:11.813-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<peak>,<TopSpin 4.4.0>,
+      <1D Peak picking
+       data hash MD5: 64K
+       CB 4A FA 7F E8 AE 1D 31 4B BB 38 A1 B7 88 FF 0F>)
+(   9,<2024-09-18T16:15:11.907-0400>,<nmrsu/CHEM 3200H>,<CZC32574FZ>,<xwish3>,<TopSpin 4.4.0>,
+      <ICON-NMR User ID: CHEM 3200H
+       data hash MD5: 64K
+       CB 4A FA 7F E8 AE 1D 31 4B BB 38 A1 B7 88 FF 0F>)
+##END=
+
+$$ hash MD5
+$$ 20 F2 FA 6B B4 92 70 9E 08 FD 3D 04 6B FC 2F 67
