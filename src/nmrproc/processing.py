@@ -88,3 +88,33 @@ def set_reference(spectrum: Spectrum, observed_ppm, target_ppm) -> Spectrum:
         nucleus=spectrum.nucleus,
         info=info,
     )
+
+
+def estimate_noise(y):
+    """Robust noise level (standard deviation) of a spectrum, ignoring signals and slow baseline.
+
+    Uses the median absolute deviation of point-to-point differences, which signals and gentle
+    baseline curvature barely affect.
+    """
+    d = np.diff(np.asarray(y, dtype=float))
+    return float(np.median(np.abs(d - np.median(d))) / 0.6745 / np.sqrt(2))
+
+
+def phase_spectrum(spectrum: Spectrum, p0=0.0, p1=0.0, pivot=0.0) -> Spectrum:
+    """Apply an additional phase correction to a Spectrum and keep a running total in ``info``.
+
+    The totals (``info["p0"]``, ``info["p1"]``) are always expressed with the pivot at the left
+    edge, i.e. in TopSpin's PHC0/PHC1 convention.
+    """
+    info = dict(spectrum.info)
+    info["p0"] = info.get("p0", 0.0) + p0 - p1 * pivot
+    info["p1"] = info.get("p1", 0.0) + p1
+    info["pivot"] = 0.0
+    return Spectrum(
+        data=phase_correct(spectrum.data, p0, p1, pivot),
+        ppm=spectrum.ppm,
+        sw_hz=spectrum.sw_hz,
+        sf_mhz=spectrum.sf_mhz,
+        nucleus=spectrum.nucleus,
+        info=info,
+    )
