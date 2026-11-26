@@ -1,0 +1,7 @@
+# Normalise line endings for source files, but never touch Bruker data (binary and parameter files).
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+testdata/** -text
