@@ -83,3 +83,14 @@ def integral_trace(spectrum: Spectrum, ranges) -> np.ndarray:
         _, _, sel = _bounds(spectrum, start, end)
         masked[sel] = y[sel]
     return np.cumsum(masked) * abs(float(spectrum.ppm[1] - spectrum.ppm[0]))
+
+
+def integral_curve(spectrum: Spectrum, start_ppm, end_ppm):
+    """Running integral across one range, for display.
+
+    Returns (ppm, cumulative): the chemical shifts of the points in the range (high to low) and
+    the integral accumulated from the high-ppm edge, in the same units as ``Integral.area``.
+    """
+    _, _, sel = _bounds(spectrum, start_ppm, end_ppm)
+    step = abs(float(spectrum.ppm[1] - spectrum.ppm[0]))
+    return spectrum.ppm[sel], np.cumsum(spectrum.real[sel]) * step

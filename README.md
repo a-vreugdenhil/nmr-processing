@@ -8,10 +8,11 @@ correction, referencing, peak picking/integration. No spectral simulation and no
 multi-dimensional experiments.
 
 **Status:** very preliminary. The 1D processing engine is in place and checked against
-TopSpin on real data (loading, apodization, zero filling, Fourier transform, phasing,
-baseline correction, referencing, peak picking, integration), and a first 1D window
-(PySide6 + matplotlib) lets you open a Bruker folder and process it interactively. Integration
-in the window, 2D processing and packaged installers are still to come.
+TopSpin on real data (loading, window functions, zero filling, Fourier transform, phasing,
+baseline correction, referencing, peak picking, integration), and a 1D window (PySide6 +
+matplotlib) lets you open a Bruker folder and do all of this interactively, including
+integration, chemical-shift referencing, and CSV export of peaks and integrals. Saving
+processed spectra, 2D processing and packaged installers are still to come.
 
 ## Development setup
 
@@ -33,10 +34,21 @@ python -m nmrproc testdata/dppe-31P/10 # or open a data set directly
 ```
 
 Choose the Bruker *experiment* folder, the one that directly contains `fid` and `acqus`.
-The window offers line broadening, zero filling, manual and automatic phasing (the dotted red
-line is the pivot for first-order phase; tick "Click spectrum to set pivot" and click a peak to
-move it), baseline correction, and peak labels. Zoom and pan with the toolbar, and use the disk
-icon to save a figure.
+
+**Process tab:** window function (none, exponential, Gaussian resolution enhancement, sine
+bell, squared sine bell; a short explanation is shown for each), zero filling, manual and
+automatic phasing (the dotted red line is the pivot for first-order phase; tick "Click
+spectrum to set pivot" and click a peak to move it), and baseline correction.
+
+**Analyze tab:**
+- *Chemical-shift reference:* click a peak and choose a standard (for example CDCl3 at 7.26 ppm)
+  or type a shift. Integration ranges move with the peaks.
+- *Peaks:* labels with an adjustable signal-to-noise threshold.
+- *Integrals:* "Draw integrals" then drag across a peak or multiplet, or use "Suggest ranges".
+  Select a row and set it to a known value (for example 3.00 for a CH3) to calibrate the others.
+
+File > Export writes the peak list or the integrals as CSV. Zoom and pan with the toolbar, and
+use the disk icon to save a figure.
 
 ## Quick example
 
@@ -65,11 +77,12 @@ to `process_1d(..., p0=..., p1=...)`.
 
 - `src/nmrproc/data.py` – plain containers (`FID`, `Spectrum`)
 - `src/nmrproc/io.py` – reading Bruker data
-- `src/nmrproc/processing.py` – apodization, zero filling, FT, phasing, referencing (pure numpy)
+- `src/nmrproc/processing.py` – window functions, zero filling, FT, phasing, referencing (pure numpy)
 - `src/nmrproc/phasing.py` – automatic phase correction (ACME)
 - `src/nmrproc/baseline.py` – baseline correction and noise estimation
 - `src/nmrproc/peaks.py` – peak picking
-- `src/nmrproc/integration.py` – integration ranges, integrals, integral trace
+- `src/nmrproc/integration.py` – integration ranges, integrals, integral curves
+- `src/nmrproc/export.py` – CSV export of peaks, integrals and spectra
 - `src/nmrproc/gui/` – user interface, kept separate from the processing code: `session.py`
   (settings and pipeline, no Qt), `main_window.py`, `widgets.py`, `app.py`
 - `tests/` – automated tests (run on Windows, macOS, and Linux in CI)
