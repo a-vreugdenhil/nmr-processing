@@ -1,0 +1,15 @@
+##TITLE= Audit trail, TopSpin 4.4.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= nmrsu
+$$ C:/Bruker/TopSpin4.4.0/data/Hendel/nmr/AA.1.4.2C acetylN3/13/pdata/1001/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-09-23T16:03:29.735-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<mvrow>,<TopSpin 4.4.0>,
+      <rsr 960 from
+       1 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       2B 25 3D DD 3B 69 36 D8 DD 9F F9 D9 93 23 60 74>)
+##END=
+
+$$ hash MD5
+$$ 3D EB 84 3E ED 85 6E 71 B8 76 00 30 36 53 8A 6C

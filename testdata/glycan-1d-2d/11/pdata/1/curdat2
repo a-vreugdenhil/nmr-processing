@@ -1,0 +1,33 @@
+##TITLE= Parameter file, TopSpin 4.4.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 4	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= nmrsu
+$$ 2024-09-23 15:43:23.958 -0400  nmrsu@CZC32574FZ
+$$ C:/Bruker/TopSpin4.4.0/data/Hendel/nmr/AA.1.4.2C acetylN3/11/pdata/1/curdat2
+$$ process C:\Bruker\TopSpin4.4.0\prog\au\bin\proc_2dsym.exe
+##$CUREXP= <>
+##$DATPATH= <>
+##$DATPATH2= <C:/Bruker/TopSpin4.4.0/data/Hendel/nmr>
+##$DATPATH3= <C:/Bruker/TopSpin4.4.0/data/Hendel/nmr>
+##$DETAILS= <>
+##$DU= </u>
+##$DU2= <C:\Bruker\TopSpin4.4.0>
+##$DU3= <>
+##$EXPNO= 1
+##$EXPNO2= 10
+##$EXPNO3= 10
+##$NAME= <>
+##$NAME2= <AA.1.4.2C acetylN3>
+##$NAME3= <AA.1.4.2C acetylN3>
+##$PROCNO= 1
+##$PROCNO2= 1
+##$PROCNO3= 1
+##$SCALE2= 1
+##$SCALE3= 1
+##$TYPE= <nmr>
+##$USER= <>
+##$USER2= <Hendel>
+##$USER3= <>
+##END=

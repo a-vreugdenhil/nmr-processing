@@ -15,8 +15,11 @@ def main(argv=None) -> int:
     app = QtWidgets.QApplication.instance() or QtWidgets.QApplication(argv)
     window = MainWindow()
     window.show()
-    if len(argv) > 1:  # optional: a data folder given on the command line
-        window.load_path(argv[1])
+    if len(argv) > 1:  # optional: a data folder or a saved session given on the command line
+        if argv[1].lower().endswith(".nmrproc"):
+            window.open_session(argv[1])
+        else:
+            window.load_path(argv[1])
     return app.exec()
 
 
