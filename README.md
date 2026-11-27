@@ -8,9 +8,10 @@ correction, referencing, peak picking/integration. No spectral simulation and no
 multi-dimensional experiments.
 
 **Status:** very preliminary. The 1D processing engine is in place and checked against
-TopSpin on real data: loading, apodization, zero filling, Fourier transform, phasing (manual
-and automatic), baseline correction, referencing, peak picking and integration. 2D processing
-and the user interface (PySide6 + matplotlib) are still to come.
+TopSpin on real data (loading, apodization, zero filling, Fourier transform, phasing,
+baseline correction, referencing, peak picking, integration), and a first 1D window
+(PySide6 + matplotlib) lets you open a Bruker folder and process it interactively. Integration
+in the window, 2D processing and packaged installers are still to come.
 
 ## Development setup
 
@@ -23,6 +24,19 @@ python -m venv .venv
 pip install -e ".[dev]"
 pytest
 ```
+
+## Running the program
+
+```
+python -m nmrproc                      # then File > Open (or drag an experiment folder onto the window)
+python -m nmrproc testdata/dppe-31P/10 # or open a data set directly
+```
+
+Choose the Bruker *experiment* folder, the one that directly contains `fid` and `acqus`.
+The window offers line broadening, zero filling, manual and automatic phasing (the dotted red
+line is the pivot for first-order phase; tick "Click spectrum to set pivot" and click a peak to
+move it), baseline correction, and peak labels. Zoom and pan with the toolbar, and use the disk
+icon to save a figure.
 
 ## Quick example
 
@@ -56,7 +70,8 @@ to `process_1d(..., p0=..., p1=...)`.
 - `src/nmrproc/baseline.py` – baseline correction and noise estimation
 - `src/nmrproc/peaks.py` – peak picking
 - `src/nmrproc/integration.py` – integration ranges, integrals, integral trace
-- `src/nmrproc/gui/` – user interface (kept separate from processing code)
+- `src/nmrproc/gui/` – user interface, kept separate from the processing code: `session.py`
+  (settings and pipeline, no Qt), `main_window.py`, `widgets.py`, `app.py`
 - `tests/` – automated tests (run on Windows, macOS, and Linux in CI)
 - `testdata/` – real Bruker data sets (1H and 31P) used to check results against TopSpin
 
