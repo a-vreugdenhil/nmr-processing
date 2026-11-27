@@ -11,13 +11,18 @@ requires-python = ">=3.10"
 dependencies = ["numpy", "scipy", "matplotlib", "nmrglue"]
 
 [project.optional-dependencies]
-dev = ["pytest", "ruff"]
+gui = ["PySide6"]
+dev = ["pytest", "ruff", "PySide6"]
+
+[project.gui-scripts]
+nmrproc = "nmrproc.gui.app:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+filterwarnings = ["ignore:Enum value .*AA_UseHighDpiPixmaps.*:DeprecationWarning"]
 
 [tool.ruff]
 line-length = 100
