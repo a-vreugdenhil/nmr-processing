@@ -99,3 +99,145 @@ def test_peaks_can_be_switched_off_and_respond_to_threshold():
     assert len(fewer) < len(many)
     session.settings.show_peaks = False
     assert session.peaks(spec) == []
+
+
+# ---- window functions, referencing and integration ranges ----------------------------------
+
+
+def test_window_choice_changes_the_spectrum_and_adjusts_line_broadening():
+    session = loaded_session()
+    exp_spec = session.spectrum().real
+    session.set_window("gaussian")
+    assert session.settings.lb_hz < 0  # Gaussian needs negative LB; set automatically
+    gauss_spec = session.spectrum().real
+    assert not np.allclose(exp_spec, gauss_spec)
+    session.set_window("exponential")
+    assert session.settings.lb_hz > 0
+    session.set_window("qsine")
+    assert session.settings.lb_hz > 0  # untouched for windows that do not use LB
+    session.set_window("none")
+    assert len(session.spectrum().ppm) == session.si
+
+
+def test_auto_phase_follows_the_chosen_window():
+    session = loaded_session()
+    session.set_window("qsine")
+    session.auto_phase()
+    assert (session.settings.p0, session.settings.p1) != (0.0, 0.0)
+
+
+def test_referencing_moves_the_axis_and_can_be_cleared():
+    session = loaded_session()
+    session.auto_phase()
+    spec = session.spectrum()
+    peak = session.nearest_peak(spec, 7.28)
+    assert peak.ppm == pytest.approx(7.284, abs=0.005)
+    session.reference_to(peak.ppm, 7.26)
+    moved = session.spectrum()
+    assert moved.ppm[int(np.argmax(moved.real))] == pytest.approx(7.26, abs=0.002)
+    assert session.settings.reference_shift == pytest.approx(7.26 - peak.ppm)
+    assert np.allclose(moved.real, spec.real)  # only the axis moved
+    session.clear_reference()
+    assert session.settings.reference_shift == 0.0
+    assert np.allclose(session.spectrum().ppm, spec.ppm)
+
+
+def test_nearest_peak_returns_none_in_empty_regions():
+    session = loaded_session()
+    session.auto_phase()
+    assert session.nearest_peak(session.spectrum(), 12.0, window_ppm=0.1) is None
+
+
+def test_regions_are_sorted_clipped_and_must_be_wide_enough():
+    session = loaded_session()
+    spec = session.spectrum()
+    session.add_region(spec, 1.7, 1.4)
+    session.add_region(spec, 7.1, 7.9)  # given low-to-high on purpose
+    assert [round(r.start_ppm, 2) for r in session.regions] == [7.9, 1.7]
+    assert session.add_region(spec, 5.0, 5.0 + 1e-6) is None  # too narrow
+    clipped = session.add_region(spec, 100.0, 90.0)
+    assert clipped is None or clipped.start_ppm <= float(spec.ppm.max())
+    session.remove_region(0)
+    assert len(session.regions) == 1 and session.regions[0].start_ppm == pytest.approx(1.7)
+    session.clear_regions()
+    assert session.regions == [] and session.integrals(spec) == []
+
+
+def test_integrals_are_calibrated_to_the_reference_region():
+    session = loaded_session()
+    session.auto_phase()
+    session.settings.baseline = True
+    spec = session.spectrum()
+    session.add_region(spec, 7.79, 7.25)
+    session.add_region(spec, 1.80, 1.40)
+    values = [i.value for i in session.integrals(spec)]
+    assert values[0] == pytest.approx(1.0)  # no reference marked: first range = 1.00
+    session.set_reference_region(1, 3.0)
+    values = [i.value for i in session.integrals(spec)]
+    assert values[1] == pytest.approx(3.0)
+    assert values[0] > 10 * values[1]  # the aromatic region dwarfs the small water signal
+    assert session.regions[1].reference and not session.regions[0].reference
+
+
+def test_regions_follow_the_peaks_when_referencing():
+    session = loaded_session()
+    session.auto_phase()
+    spec = session.spectrum()
+    session.add_region(spec, 7.5, 7.1)
+    before = [i.area for i in session.integrals(spec)]
+    session.reference_to(7.284, 7.26)
+    after = [i.area for i in session.integrals(session.spectrum())]
+    assert session.regions[0].start_ppm == pytest.approx(7.5 + (7.26 - 7.284))
+    assert after == pytest.approx(before, rel=1e-6)  # same points enclosed, same area
+
+
+def test_load_resets_regions_and_reference():
+    session = loaded_session()
+    session.add_region(session.spectrum(), 7.5, 7.1)
+    session.reference_to(7.284, 7.26)
+    session.load(PATH)
+    assert session.regions == [] and session.settings.reference_shift == 0.0
+    assert session.reference_value == 1.0
+
+
+def test_nearest_peak_prefers_the_closest_peak_over_the_tallest():
+    session = loaded_session()
+    session.auto_phase()
+    spec = session.spectrum()
+    tall = session.nearest_peak(spec, 7.286, window_ppm=0.2)
+    assert tall.ppm == pytest.approx(7.284, abs=0.005)  # the CHCl3 singlet, the tallest peak
+    # Clicking at 7.30 is closer to a small multiplet line (7.309) than to the singlet (7.284):
+    close = session.nearest_peak(spec, 7.30, window_ppm=0.2)
+    assert close.ppm == pytest.approx(7.309, abs=0.01) and close.height < tall.height
+    small = session.nearest_peak(spec, 7.334, window_ppm=0.2)
+    assert small.ppm == pytest.approx(7.334, abs=0.01) and small.height < tall.height
+
+
+def test_region_at_and_edge_moves_keep_ranges_valid():
+    session = loaded_session()
+    spec = session.spectrum()
+    session.add_region(spec, 7.6, 7.2)
+    session.add_region(spec, 1.8, 1.4)
+    assert session.region_at(7.4) == 0 and session.region_at(1.5) == 1
+    assert session.region_at(5.0) is None
+    index = session.move_region_edge(spec, 0, "end", 7.0)
+    assert index == 0 and session.regions[0].end_ppm == pytest.approx(7.0)
+    session.move_region_edge(spec, 0, "start", 7.0)  # cannot collapse the range
+    width = session.regions[0].start_ppm - session.regions[0].end_ppm
+    assert width >= 3 * abs(float(spec.ppm[1] - spec.ppm[0])) - 1e-12
+    session.move_region_edge(spec, 0, "start", 500.0)  # clamped to the spectrum
+    assert session.regions[0].start_ppm == pytest.approx(float(spec.ppm.max()))
+    with pytest.raises(ValueError):
+        session.move_region_edge(spec, 0, "middle", 5.0)
+
+
+def test_moving_an_edge_past_a_neighbour_keeps_the_list_sorted_and_the_reference():
+    session = loaded_session()
+    spec = session.spectrum()
+    session.add_region(spec, 7.6, 7.2)
+    session.add_region(spec, 5.0, 4.0)
+    session.set_reference_region(0, 3.0)
+    new_index = session.move_region_edge(spec, 0, "start", 4.8)
+    starts = [r.start_ppm for r in session.regions]
+    assert starts == sorted(starts, reverse=True)
+    assert session.regions[new_index].reference  # the reference flag travels with the range

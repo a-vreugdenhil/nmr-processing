@@ -1,0 +1,26 @@
+##TITLE= Audit trail, TopSpin 4.4.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= root
+$$ /root/.topspin-BladeEpu/local_acqu/AA.1.4.2C acetylN3/13/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-09-23T19:48:28.624+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <acquisition in progress>)
+$$ C:/Bruker/TopSpin4.4.0/data/Hendel/nmr/AA.1.4.2C acetylN3/13/audita.txt
+(   2,<2024-09-23T20:03:27.453+0000>,<CZC32574FZ\nmrsu>,<CZC32574FZ>,<go4>,<TopSpin 4.4.0>,
+      <created by zg on 'Avance' (CZC32574FZ) by user 'CZC32574FZ\nmrsu'
+       on data set with UUID 'cdbb9b36-79e4-11ef-a9a2-0030d6368905'
+       started at 2024-09-23 19:48:28.624 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2024-09-23 20:03:27.452 +0000
+       configuration hash MD5:
+       5E 30 06 7C FA 89 B2 6C 4E BE 0D 84 F6 77 69 BB
+       double data hash MD5: 2K * 256
+       A4 C2 34 D1 89 D7 9F 1E 1F 71 8D DA 7F 56 C4 4B>)
+(   3,<2024-09-23T16:03:24.798-0400>,<nmrsu>,<CZC32574FZ>,<xwish3>,<TopSpin 4.4.0>,
+      <ICON-NMR User ID: Hendel
+       double data hash MD5: 2K * 256
+       A4 C2 34 D1 89 D7 9F 1E 1F 71 8D DA 7F 56 C4 4B>)
+##END=
+
+$$ hash MD5
+$$ 77 37 78 45 EF 20 C8 BF 58 2F 2C C9 23 F1 77 BB

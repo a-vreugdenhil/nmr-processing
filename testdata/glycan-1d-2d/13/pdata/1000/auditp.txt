@@ -1,0 +1,217 @@
+##TITLE= Audit trail, TopSpin 4.4.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= nmrsu
+$$ C:/Bruker/TopSpin4.4.0/data/Hendel/nmr/AA.1.4.2C acetylN3/13/pdata/1000/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-09-23T16:03:27.282-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<mvrow>,<TopSpin 4.4.0>,
+      <rsr 61 from
+       1 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       33 5F 49 22 33 67 64 B8 64 8C 67 70 ED B1 30 69>)
+(   2,<2024-09-23T16:03:27.329-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       7F 28 3D B6 25 89 BF EF F9 32 3A C5 E7 56 AD 5C>)
+(   3,<2024-09-23T16:03:27.392-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       AE 35 77 D3 10 9D 5D 63 CB 67 5A C8 7E BF B0 1E>)
+(   4,<2024-09-23T16:03:27.438-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       08 B4 DC F6 81 14 E9 C3 A8 74 97 68 38 69 0B BF>)
+(   5,<2024-09-23T16:03:27.501-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       96 8B 4A C7 C9 87 60 77 F2 32 DA E5 3C 28 D3 B0>)
+(   6,<2024-09-23T16:03:27.548-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       AC 03 06 00 EA 07 8E 94 BC DC AB 67 66 7A E7 2A>)
+(   7,<2024-09-23T16:03:27.610-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       EA AE 4E 64 86 4E 44 2F D4 23 EB 4F 78 E0 81 9B>)
+(   8,<2024-09-23T16:03:27.657-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       D3 68 70 24 1C 6B 1A 91 33 45 91 D9 51 AA BD 4B>)
+(   9,<2024-09-23T16:03:27.704-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       C8 D8 E1 30 6C 5C 6E B4 54 33 46 06 67 A8 33 4C>)
+(  10,<2024-09-23T16:03:27.751-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       CF 7A 5F FB 2D 0E 3C 37 51 CE 46 6B D6 CB FF C1>)
+(  11,<2024-09-23T16:03:27.813-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       88 FA 17 87 D5 CC 96 96 31 54 24 A4 9A 8F A5 94>)
+(  12,<2024-09-23T16:03:27.860-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       AA 90 12 73 38 04 79 BD 71 10 F8 15 49 69 32 AF>)
+(  13,<2024-09-23T16:03:28.016-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       F1 F9 B2 C3 88 0C 81 5A 3D 5A A7 1A 7E F8 CC 62>)
+(  14,<2024-09-23T16:03:28.173-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       1C A6 C3 C8 0A EB 4C DF 51 00 A6 52 8D 6A 87 6A>)
+(  15,<2024-09-23T16:03:28.235-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       43 9B CD B8 FA 62 96 DF 9A F0 D8 F5 A4 2F F2 E6>)
+(  16,<2024-09-23T16:03:28.391-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       F7 05 76 46 CF 83 F3 37 06 79 C6 A9 8E 29 75 62>)
+(  17,<2024-09-23T16:03:28.454-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       C3 BB 75 7F 38 F7 57 08 1F EC 48 55 55 E3 C8 95>)
+(  18,<2024-09-23T16:03:28.610-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       33 C0 ED 22 48 FD 88 B7 B3 F4 19 70 BE D3 C3 23>)
+(  19,<2024-09-23T16:03:28.673-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       25 96 E1 3C EB 84 3E 15 0A 56 03 7B 69 BC CF B0>)
+(  20,<2024-09-23T16:03:28.813-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       D7 43 7D 84 56 49 45 A9 E7 1F 35 91 2C 1D D5 C7>)
+(  21,<2024-09-23T16:03:28.969-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       09 60 E4 E4 B8 1E 73 32 BB C5 43 FD 5A 46 DD E3>)
+(  22,<2024-09-23T16:03:29.032-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       6C A3 E1 94 AF 12 80 B4 1F 51 1D 75 D1 4C 75 AF>)
+(  23,<2024-09-23T16:03:29.079-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       80 96 5D 20 04 D3 2F 0D B3 EB 75 4D 59 F9 D1 81>)
+(  24,<2024-09-23T16:03:29.126-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       C4 2E 96 FB 54 C3 AF 0C F7 88 31 72 72 1E 67 02>)
+(  25,<2024-09-23T16:03:29.188-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       EC AC CC 9B 91 DC 68 53 01 88 41 A8 A5 87 8A 80>)
+(  26,<2024-09-23T16:03:29.344-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       8E 1D 91 FB 06 86 17 6F 38 AD 56 98 A6 9C 53 32>)
+(  27,<2024-09-23T16:03:29.407-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       F0 9E 8B 03 DB D7 CA F9 E2 9A BD A0 07 20 9B 22>)
+(  28,<2024-09-23T16:03:29.469-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       17 6B 76 91 0D AE 9C 1E 3A EA 81 AB E2 BD 8F 26>)
+(  29,<2024-09-23T16:03:29.516-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       24 A2 4D C7 33 27 3C 3E F5 41 A8 68 C5 E7 EA 18>)
+(  30,<2024-09-23T16:03:29.563-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       50 8F E3 92 7B 27 44 57 AF 8A 3D 65 87 10 96 76>)
+(  31,<2024-09-23T16:03:29.625-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       CC 07 D7 35 8D 52 B9 FA 91 E9 74 83 D3 33 45 32>)
+(  32,<2024-09-23T16:03:29.672-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       0B EB F4 17 BB DC 48 2F 47 78 24 97 8B BF 1C C0>)
+(  33,<2024-09-23T16:03:29.719-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       12 B3 9D D8 25 71 A3 28 B8 68 CA E8 E0 FE D9 E2>)
+(  34,<2024-09-23T16:03:29.782-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       1001 13 "AA.1.4.2C acetylN3" "C:/Bruker/TopSpin4.4.0/data/Hendel/nmr"
+       data hash MD5: 2K
+       D6 DB 47 02 16 7C D6 51 E0 91 D4 F5 4F 94 5A 21>)
+(  35,<2024-09-23T16:03:29.938-0400>,<nmrsu/Hendel>,<CZC32574FZ>,<proc1d>,<TopSpin 4.4.0>,
+      <apk 
+       data hash MD5: 2K
+       8A ED 29 C4 D2 13 03 9A 2F E0 BB 7A 17 7F A8 89>)
+##END=
+
+$$ hash MD5
+$$ 9D F7 5E 38 29 DC A1 DF 26 1D 81 5E F0 9E 77 9B

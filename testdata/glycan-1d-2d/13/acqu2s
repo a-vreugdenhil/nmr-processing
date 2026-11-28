@@ -1,0 +1,24 @@
+##TITLE= Parameter file, TopSpin 4.4.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 260	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= nmrsu
+$$ 2024-09-23 16:03:22.861 -0400  nmrsu@CZC32574FZ
+$$ C:/Bruker/TopSpin4.4.0/data/Hendel/nmr/AA.1.4.2C acetylN3/13/acqu2s
+$$ process C:\Bruker\TopSpin4.4.0\prog\mod\acqdataserver.exe
+##$ACQT0= 0
+##$BF1= 100.65551506
+##$FnILOOP= 1
+##$FnMODE= 6
+##$NUC1= <13C>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 256
+##$O1= 9058.997
+##$ProjAngle= 0
+##$SFO1= 100.664574057
+##$SW= 180
+##$SW_h= 18119.62333026
+##$TD= 256
+##END=
