@@ -1,0 +1,86 @@
+{
+  "format": "nmrproc-session",
+  "version": 1,
+  "program_version": "0.0.1",
+  "data_path": "C:\\Users\\Andrew\\nmr-processing-starter\\nmr-processing\\testdata\\glycan-1d-2d\\10",
+  "data_path_relative": "10",
+  "settings": {
+    "window": "exponential",
+    "lb_hz": 0.3,
+    "gb": 0.1,
+    "ssb": 2.0,
+    "zero_fill": 2,
+    "p0": 32.05930333806623,
+    "p1": 17.22605744044573,
+    "pivot": 0.70025634765625,
+    "baseline": false,
+    "baseline_order": 5,
+    "reference_shift": -0.02409925558367476,
+    "show_peaks": true,
+    "peak_snr": 6.0
+  },
+  "reference_value": 1.0,
+  "regions": [
+    {
+      "start_ppm": 7.296950577558885,
+      "end_ppm": 7.11323246514422,
+      "reference": false
+    },
+    {
+      "start_ppm": 5.431273484800679,
+      "end_ppm": 5.395083426746224,
+      "reference": false
+    },
+    {
+      "start_ppm": 5.1900064311043135,
+      "end_ppm": 5.113605197433799,
+      "reference": false
+    },
+    {
+      "start_ppm": 5.058649924091848,
+      "end_ppm": 4.994312043106151,
+      "reference": false
+    },
+    {
+      "start_ppm": 4.644910886783933,
+      "end_ppm": 4.540866445569506,
+      "reference": false
+    },
+    {
+      "start_ppm": 4.1914289033054715,
+      "end_ppm": 4.123069904758168,
+      "reference": false
+    },
+    {
+      "start_ppm": 4.03594569092337,
+      "end_ppm": 3.9756289274992787,
+      "reference": false
+    },
+    {
+      "start_ppm": 2.1856463104015122,
+      "end_ppm": 2.149430544482683,
+      "reference": false
+    },
+    {
+      "start_ppm": 2.090928153383037,
+      "end_ppm": 2.0686415282022192,
+      "reference": false
+    },
+    {
+      "start_ppm": 2.0612126531419466,
+      "end_ppm": 2.0389260279611285,
+      "reference": false
+    },
+    {
+      "start_ppm": 1.9887811213042887,
+      "end_ppm": 1.9627800585933346,
+      "reference": false
+    }
+  ],
+  "view": {
+    "xlim": [
+      7.992767010637561,
+      0.9966753972323641
+    ]
+  }
+}

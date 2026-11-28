@@ -1,5 +1,6 @@
 """Saving and reopening sessions (no Qt needed)."""
 import json
+import os
 import shutil
 from pathlib import Path
 
@@ -76,14 +77,34 @@ def test_round_trip_restores_everything(tmp_path):
 
 
 def test_saved_file_is_readable_text_with_a_relative_path(tmp_path):
+    # The data are copied next to the session file: on Windows the repository and the temporary
+    # folder can be on different drives, where no relative path exists (tested separately below).
+    data_dir = tmp_path / "data" / "10"
+    shutil.copytree(PATH, data_dir)
+    saved = tmp_path / "work.nmrproc"
+    save_session(worked_session(data_dir), saved)
+    data = json.loads(saved.read_text(encoding="utf-8"))
+    assert data["settings"]["window"] == "gaussian" and data["reference_value"] == 2.0
+    assert Path(data["data_path"]) == data_dir.resolve()
+    assert (saved.parent / data["data_path_relative"]).resolve() == data_dir.resolve()
+    assert not (tmp_path / "work.nmrproc.tmp").exists()  # the temporary file is gone
+
+
+def test_data_on_another_drive_is_recorded_by_full_path_only(tmp_path, monkeypatch):
+    """On Windows, os.path.relpath fails between drives (e.g. C: and D:); saving must still work."""
+    def different_drives(*args, **kwargs):
+        raise ValueError("path is on mount 'D:', start on mount 'C:'")
+
+    monkeypatch.setattr(os.path, "relpath", different_drives)
     saved = tmp_path / "work.nmrproc"
     save_session(worked_session(), saved)
-    text = saved.read_text(encoding="utf-8")
-    data = json.loads(text)
-    assert data["settings"]["window"] == "gaussian" and data["reference_value"] == 2.0
-    assert Path(data["data_path"]) == PATH.resolve()
-    assert (saved.parent / data["data_path_relative"]).resolve() == PATH.resolve()
-    assert not (tmp_path / "work.nmrproc.tmp").exists()  # the temporary file is gone
+    data = read_session_file(saved)
+    assert data["data_path_relative"] is None
+    assert resolve_data_path(data, saved) == PATH.resolve()  # found by the full path
+    restored = Session()
+    restored.load(resolve_data_path(data, saved))
+    apply_session_data(restored, data)
+    assert restored.snapshot() == worked_session().snapshot()
 
 
 def test_session_and_data_can_be_moved_together(tmp_path):
