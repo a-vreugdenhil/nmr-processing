@@ -2,7 +2,7 @@
   "format": "nmrproc-session",
   "version": 1,
   "program_version": "0.0.1",
-  "data_path": "C:\\Users\\Andrew\\nmr-processing-starter\\nmr-processing\\testdata\\glycan-1d-2d\\10",
+  "data_path": null,
   "data_path_relative": "10",
   "settings": {
     "window": "exponential",
